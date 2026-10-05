@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #666;
+    font-size: 15px;
+}
