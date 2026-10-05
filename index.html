@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Strength Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="card">
+
+      <div class="header">
+        <div class="icon">🔐</div>
+        <div>
+          <h1>Password Strength Analyzer</h1>
+          <p>Check the strength of your password instantly.</p>
+        </div>
+      </div>
+
+      <label for="password">Enter Password</label>
+
+      <div class="input-box">
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+          autocomplete="off"
+        >
+        <button id="toggleBtn" type="button">Show</button>
+      </div>
+
+      <div class="strength-bar">
+        <div id="strengthFill"></div>
+      </div>
+
+      <div class="strength-info">
+        <span>Strength</span>
+        <strong id="strengthText">Not checked</strong>
+      </div>
+
+      <div class="score">
+        <span>Score</span>
+        <strong><span id="score">0</span>/100</strong>
+      </div>
+
+      <h2>Password Requirements</h2>
+
+      <ul class="requirements">
+        <li id="length">At least 8 characters</li>
+        <li id="uppercase">Uppercase letter (A-Z)</li>
+        <li id="lowercase">Lowercase letter (a-z)</li>
+        <li id="number">Number (0-9)</li>
+        <li id="special">Special character (!@#$...)</li>
+      </ul>
+
+      <div id="feedback" class="feedback">
+        Enter a password to see feedback.
+      </div>
+
+      <div class="privacy">
+        <strong>Privacy:</strong>
+        Your password is checked locally in your browser.
+        It is not saved or sent anywhere.
+      </div>
+
+    </div>
+
+    <footer>
+      Password Strength Analyzer | HTML, CSS & JavaScript
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
